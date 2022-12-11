@@ -1,0 +1,36 @@
+Q #11) What is Encapsulation?
+
+Answer: Purpose of Encapsulation:
+
+Protects the code from others.
+Code maintainability.
+Example:
+
+We are declaring ‘a’ as an integer variable and it should not be negative.
+
+public class Addition(){
+int a=5;
+}
+If someone changes the exact variable as “a = -5” then it is bad.
+
+In order to overcome the problem we need to follow the steps below:
+
+We can make the variable private or protected.
+Use public accessor methods such as set<property> and get<property>.
+So that the above code can be modified as:
+
+public class Addition(){
+private int a = 5; //Here the variable is marked as private
+}
+The code below shows the getter and setter.
+
+Conditions can be provided while setting the variable.
+
+get A(){
+}
+set A(int a){
+if(a&gt;0){// Here condition is applied
+.........
+}
+}
+For encapsulation, we need to make all the instance variables private and create setter and getter for those variables. Which in turn will force others to call the setters rather than access the data directly.
